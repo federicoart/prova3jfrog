@@ -30,6 +30,6 @@ stages:
           $(tag)
     - task: ArtifactoryPublishBuildInfo@1
       inputs:
-    artifactoryService: 'fedeRegistry'
-    buildName: '$(Build.DefinitionName)'
-    buildNumber: '$(Build.BuildNumber)'
+       artifactoryService: 'fedeRegistry'
+       buildName: '$(Build.DefinitionName)'
+       buildNumber: '$(Build.BuildNumber)'
